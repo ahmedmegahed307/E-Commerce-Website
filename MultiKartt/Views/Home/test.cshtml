@@ -1,0 +1,64 @@
+﻿@model HomePageViewModel
+<section class="section-b-space p-t-0 ratio_asos">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="theme-tab">
+                    <ul class="tabs tab-title">
+                        @foreach (var cat in Model.ListCategory)
+                        {
+                            <li class="current">
+
+                                <a href="@string.Format("tab-{0}", cat.Category.CategoryName)">@cat.Category.CategoryName</a>
+
+                            </li>
+                        }
+                    </ul>
+
+                    @foreach (var cat in Model.ListCategory)
+                    {
+                        <div class="tab-content-cls">
+                            <div id="@string.Format("tab-{0}",@cat.Category.CategoryName)" class="tab-content active default">
+
+                                <div class="no-slider row">
+                                    @foreach (var item in Model.ListAllProducts.Where(a => a.CategoryId == cat.CategoryId))
+                                    {
+                                        <div class="product-box">
+                                            <div class="img-wrapper">
+                                                <div class="front">
+                                                    <a asp-controller="Details" asp-action="Details" asp-route-id="@item.TbProductId">
+                                                        <img src="@string.Format("/Uploads/{0}", item.ImageName)"
+                                                             class="img-fluid blur-up lazyload bg-img" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="product-detail">
+                                                <div class="rating">
+                                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                </div>
+                                                <a href="product-page(no-sidebar).html">
+                                                    <h6>@item.ProductName</h6>
+                                                </a>
+                                                <h4>@item.SalesPrice</h4>
+
+                                            </div>
+                                        </div>
+
+                                     }
+                                </div>
+
+                            </div>
+
+
+
+
+
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

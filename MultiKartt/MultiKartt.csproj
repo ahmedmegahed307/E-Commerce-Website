@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-MultiKarttt-71CDF20E-447C-4F3B-A369-1077ABF98CC3</UserSecretsId>
+    <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210822042735_sa.cs" />
+    <Compile Remove="Migrations\20210822042735_sa.Designer.cs" />
+    <Compile Remove="Migrations\20210907030501_aa.cs" />
+    <Compile Remove="Migrations\20210907030501_aa.Designer.cs" />
+    <Compile Remove="Migrations\20210907035811_qqqssssss.cs" />
+    <Compile Remove="Migrations\20210907035811_qqqssssss.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Areas\Admin2\Views\Category\CategoryEdit.cshtml" />
+    <None Include="Areas\Admin2\Views\Category\CategoryList.cshtml" />
+    <None Include="Areas\Admin2\Views\Home\EditSlider.cshtml" />
+    <None Include="Areas\Admin2\Views\Home\Index.cshtml" />
+    <None Include="Areas\Admin2\Views\Home\Slider.cshtml" />
+    <None Include="Areas\Admin2\Views\Product\Edit.cshtml" />
+    <None Include="Areas\Admin2\Views\Product\EditPhoto.cshtml" />
+    <None Include="Areas\Admin2\Views\Product\List.cshtml" />
+    <None Include="Areas\Admin2\Views\Product\ProductsInProject.cshtml" />
+    <None Include="Areas\Admin2\Views\Product\ShowPhoto.cshtml" />
+    <None Include="Areas\Admin2\Views\Product\test.cshtml" />
+    <None Include="Areas\Admin2\Views\Shared\_Layout.cshtml" />
+    <None Include="Views\Reviews\Reviews.cshtml" />
+    <None Include="Views\Reviews\ReviewsMainPage.cshtml" />
+    <None Include="Views\Reviews\SuccessMessage.cshtml" />
+    <None Include="Views\Shared\Components\Categories\Default.cshtml" />
+    <None Include="Views\Shared\Components\SmallCartCount\Default.cshtml" />
+    <None Include="Views\Shared\Components\SmallCart\Default.cshtml" />
+    <None Include="wwwroot\Modules\Helper.js" />
+    <None Include="wwwroot\Modules\JsCategory.js" />
+    <None Include="wwwroot\Modules\JsProduct.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Korzh.EasyQuery.Linq" Version="7.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domains\Domains.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Uploads\" />
+  </ItemGroup>
+
+</Project>

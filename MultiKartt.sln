@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiKartt", "MultiKartt\MultiKartt.csproj", "{F85F2655-BE68-4CE1-9770-2F0609267607}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domains", "Domains\Domains.csproj", "{77AD78A9-ECB9-4C80-971C-B3B49971C509}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F85F2655-BE68-4CE1-9770-2F0609267607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F85F2655-BE68-4CE1-9770-2F0609267607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F85F2655-BE68-4CE1-9770-2F0609267607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F85F2655-BE68-4CE1-9770-2F0609267607}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77AD78A9-ECB9-4C80-971C-B3B49971C509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77AD78A9-ECB9-4C80-971C-B3B49971C509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77AD78A9-ECB9-4C80-971C-B3B49971C509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77AD78A9-ECB9-4C80-971C-B3B49971C509}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA7478DF-8EFE-4205-8546-5BDCEDBD4ACE}
+	EndGlobalSection
+EndGlobal
